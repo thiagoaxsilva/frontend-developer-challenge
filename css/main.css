@@ -1,0 +1,13 @@
+.conteiner {
+    /* Layout Properties */
+    
+    top: 0px;
+    left: 0px;
+    width: 1500px;
+    height: 2015px;
+    
+    /* UI Properties */
+
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
