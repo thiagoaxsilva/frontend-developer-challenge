@@ -3,119 +3,272 @@
     src: url(assets/helvetica-neue.ttf) format("truetype");
 }
 
-html,
-body {
-    height: 100%;
+*, html, body {
+    margin: 0;
+    padding: 0;
 }
+
 .conteiner {
-    /* Layout Properties */
-    
     position: relative;
-    top: 0px;
-    left: 0px;
-    width: 1500px;
-    height: 2015px;
+}
 
-    
-    /* UI Properties */
-
+body {
+    font-family: 'Helvetica Neue', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     opacity: 1;
 }
-.logo {
-    /* Layout Properties */
-    
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 1500px;
-    height: 319px;
 
-    /* UI Properties */
-    
+.body-header {
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 15.831265508685%;
+    background: #707070 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+    text-align: center;
+}
+
+.logo {
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 49px;
+}
+
+h2 {
+    margin-top: 4.5657568238213%;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+h3 {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 2.4813895781638%;
+    margin-top: 1.1910669975186%;
+}
+
+
+.body-header .btn-navigation .btn-menu {   
+    margin: auto;
+    max-width: 51.266666666667%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.btn-menu button{
+    margin: 2px;
+    margin-bottom: 49.33px;
+    font-size: 14px;
+    width: 160px;
+    height: 40px;
+    color: #888888;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 6px #00000029;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.btn-menu span {
+    padding: 12px 0px;
+}
+
+.content {
+    text-align: center;
+}
+
+.section-title {
+    margin-top: 48.67px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #888888;
+}
+
+.products-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+  
+.items {
+    display: flex;
+    max-width: 931px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 30px;
+}
+  
+.card-item {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 192.75px;
+    height: 377px;
+}
+
+.card-img {
+    width: 190.75px;
+    background-color: #FFFFFF;
+    border: 1px solid #707070;
+}
+
+.card-title {
+    margin: 0;
+    margin-top: 14px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #888888;
+}
+
+.card-description {
+    margin: 0;
+    font-size: 12px;
+    color: #888888;
+}
+
+.card-price {
+    margin: 0;
+    margin-top: 6px;
+    margin-bottom: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #888888;
+}
+
+.card-btn {
+    margin-top: 10px;
+    width: 192.75px;
+    height: 30px;
+    font-size: 16px;
+    color: #888888;
+    background-color: #FFFFFF;
+    border: 1px solid #707070;
+    border-radius: 4px;
+}
+
+.products-button button {
+    width: 260px;
+    height: 39px;
+    margin: auto;
+    margin-top: 22px;
+    background-color: #FFFFFF;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    display: block;
+    font-size: 16px;
+    color: #888888;
+}
+*/
+  
+.products-button {
+    color: #888888;
+    margin-top: 2%;
+}
+  
+/*.products-button button {
+    cursor: pointer;
+    width: 230px;
+    height: 40px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    opacity: 1;
+    margin: 0 10px;
+}*/
+  
+.newsletter {
+    margin: 164px auto 80px auto;
+}
+  
+.newsletter p {
+    text-align: center;
+    max-width: 100%;
+}
+  
+.newsletter .form {
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 760px;
+}
+  
+.newsletter .form input {
+    width: 340px;
+    height: 30px;
+    border: 1px solid #707070;
+  }
+  
+.newsletter .form .input-container {
+    display: inline-flex;
+    flex-flow: column;
+    text-align: left;
+    margin: auto;
+  }
+  
+.newsletter .form .input-container label {
+    font-size: 14px;
+  }
+  
+.newsletter .form .input-container-error {
+    color: #e41f1f;
+    border-color: #e41f1f;
+  }
+  
+.newsletter .form .input-container-error label {
+    color: #e41f1f;
+  }
+  
+.newsletter .send-button {
+    color: #888888;
+    text-align: center;
+}
+  
+.newsletter .send-button button {
+    cursor: pointer;
+    width: 230px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    opacity: 1;
+    margin: 0 10px;
+}
+
+
+footer {
+    top: 1828px;
+    left: 0px;
+    width: 100%;
+    height: 201px;
     background: #707070 0% 0% no-repeat padding-box;
     border: 1px solid #707070;
     opacity: 1;
 }
 
-h1 {
-    /* Layout Properties */
-    
-    position: absolute;
-    top: 92px;
-    left: 571px;
-    width: 358px;
-    height: 48px;
-    margin: 0px;
-            
-    /* UI Properties */
-    
+footer div {
+    font-size: 12px;
+    color: #FFF; 
     text-align: center;
-    font: Bold 40px/49px 'Helvetica Neue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
-    letter-spacing: 0;
-    color: #FFFFFF;
-    opacity: 1;
+    padding-top: 64.64px;
 }
 
-h2 {
-    /* Layout Properties */
-    
-    position: absolute;
-    top: 69px;
-    left: 635px;
-    width: 227px;
-    height: 23px;
-    margin: 0px;
-            
-    /* UI Properties */
-    
-    text-align: left;
-    font: normal 20px/24px 'Helvetica Neue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
-    letter-spacing: 0;
-    color: #FFFFFF;
-    opacity: 1; 
-}
-
-h3 {
-    /* Layout Properties */
-    
-    position: absolute;
-    top: 164px;
-    left: 476px;
-    width: 548px;
-    height: 16px;
-    margin: 0px;
-            
-    /* UI Properties */
-    
-    text-align: center;
-    font: normal 14px/16px 'Helvetica Neue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
-    letter-spacing: 0;
-    color: #FFFFFF;
-    opacity: 1;
-}
-
-.nav-buttons button span{
-    /* Layout Properties */
-    position: relative;
-    text-decoration: none;
-    padding-top: 12px;
-    font: normal 14px/16px Helvetica Neue;
-    letter-spacing: 0;
-}
-
-.nav-buttons button{
-    /* Layout Properties */
-    position: relative;
-    top: 230px;
-    width: 160px;
-    height: 40px;
-
-    /* UI Properties */
-
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 1px 6px #00000029;
-    border: 1px solid #707070;
-    border-radius: 4px;
-    opacity: 1;
+@media only screen and (max-width: 700px) {
+    .newsletter .form input {
+      width: 300px !important;
+    }
 }

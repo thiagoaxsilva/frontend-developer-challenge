@@ -1,62 +1,89 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href=".\css\main.css">
     <title>Frontend Developer Challenge </title>
 </head>
 
 <body>
     <div class="container">
-        <div class="header">
+        <header class="body-header">
             <div class="logo">
-                <h1>especial para você</h1>
                 <h2>uma seleção de produtos</h2>
+                <h1>especial para você</h1>
                 <h3>Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</h3>
             </div>
-            <div class="nav-buttons">
-                <a href="">
-                    <button id="1">
-                        <span>Conheça a Linx</span>
+            <div class="btn-navigation">
+                <div class="btn-menu">
+                    <a href="#">
+                        <button>
+                            <span>Conheça a Linx</span>
+                        </button>
+                    </a>
+                    <a href="#">
+                        <button>
+                            <span>Ajude o algoritmo</span>
+                        </button>
+                    </a>
+                    <a href="#">
+                        <button>
+                            <span>Seus produtos</span>
+                        </button>
+                    </a>
+                    <a href="#">
+                        <button>
+                            <span>Compartilhe</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+        </header>
+
+        <div class="content">
+            <div id="products"></div>
+            <p class="section-title">Sua seleção especial</p>
+            <div class="products-container" id="products-container">
+                <div class="items" id="items"></div>
+                <div class="products-button">
+                    <button onclick="getProducts()">
+                        <span>Ainda mais produtos aqui!</span>
                     </button>
-                </a>
-                <a href="">
-                    <button id="2">
-                        <span>Ajude o algoritmo</span>
-                    </button>
-                </a>
-                <a href="">
-                    <button id="3">
-                        <span>Seus produtos</span>
-                    </button>
-                </a>
-                <a href="">
-                    <button id="4">
-                        <span>Compartilhe</span>
-                    </button>
-                </a>
+                </div>
+            </div>
+
+            <div id="newsletter" class="newsletter">
+                <p class="section-title">Compartilhe a novidade</p>
+
+                <p>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
+
+                <div class="form">
+                    <div class="input-container">
+                        <label for="name">Nome do seu amigo:</label>
+                        <input id="name" type="text">
+                    </div>
+                    <div class="input-container">
+                        <label for="email">Email:</label>
+                        <input onfocusout="checkEmail()" id="email" type="email">
+                    </div>
+                </div>
+
+                <div class="send-button">
+                    <button>Enviar agora</button>
+                </div>
             </div>
         </div>
 
-        <div class="content"></div>
-        <p class="content-tile">Sua seleção especial</p>
-        <div class="products" id="id-products">
-            <div class="" id=""></div>
-            
-            <div class="products-button">
-                <button>
-                    <span>Ainda mais produtos aqui!</span>
-                </button>
-            </div>
-
-        </div>
-        <div class="footer">
-            <small>Testando suas habilidades em HTML, CSS, JS.</small>
-            <small>Linx Impulse</small>
-            <small>2019</small>
-        </div>
-
-        <script src=""></script>
+        <footer>
+            <div>Testando suas habilidades em HTML, CSS e JS.</br>Linx Impulse</br>2019</div>
+        </footer>
     </div>
+
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
