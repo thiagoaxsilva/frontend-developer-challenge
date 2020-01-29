@@ -97,9 +97,8 @@ h3 {
 
 .nav-buttons button span{
     /* Layout Properties */
-    position: absolute;
+    position: relative;
     text-decoration: none;
-    text-align: center;
     padding-top: 12px;
     font: normal 14px/16px Helvetica Neue;
     letter-spacing: 0;
@@ -107,16 +106,16 @@ h3 {
 
 .nav-buttons button{
     /* Layout Properties */
+    position: relative;
+    top: 230px;
     width: 160px;
     height: 40px;
 
     /* UI Properties */
 
-    background: #FFFFFF 0% 0% no repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 1px 6px #00000029;
     border: 1px solid #707070;
     border-radius: 4px;
-    opacity: 1;   
-    margin: 0 0px;
-
+    opacity: 1;
 }
