@@ -1,3 +1,12 @@
+@font-face {
+    font-family: Helvetica Neue;
+    src: url(assets/helvetica-neue.ttf) format("truetype");
+}
+
+html,
+body {
+    height: 100%;
+}
 .conteiner {
     /* Layout Properties */
     
@@ -56,11 +65,12 @@ h2 {
     left: 635px;
     width: 227px;
     height: 23px;
+    margin: 0px;
             
     /* UI Properties */
     
     text-align: left;
-    font: Regular 20px/24px 'Helvetica Neue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+    font: normal 20px/24px 'Helvetica Neue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
     letter-spacing: 0;
     color: #FFFFFF;
     opacity: 1; 
@@ -74,12 +84,39 @@ h3 {
     left: 476px;
     width: 548px;
     height: 16px;
+    margin: 0px;
             
     /* UI Properties */
     
     text-align: center;
-    font: Regular 14px/16px 'Helvetica Neue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+    font: normal 14px/16px 'Helvetica Neue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
     letter-spacing: 0;
     color: #FFFFFF;
     opacity: 1;
+}
+
+.nav-buttons button span{
+    /* Layout Properties */
+    position: absolute;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 12px;
+    font: normal 14px/16px Helvetica Neue;
+    letter-spacing: 0;
+}
+
+.nav-buttons button{
+    /* Layout Properties */
+    width: 160px;
+    height: 40px;
+
+    /* UI Properties */
+
+    background: #FFFFFF 0% 0% no repeat padding-box;
+    box-shadow: 0px 1px 6px #00000029;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    opacity: 1;   
+    margin: 0 0px;
+
 }
