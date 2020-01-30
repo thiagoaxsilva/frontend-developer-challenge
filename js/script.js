@@ -1,7 +1,8 @@
 var page = 0;
 this.getProducts();
 
-function checkEmail() {
+//Função para checar se o e-mail é valido.
+function checkEmail() { 
     let emailToCheck = document.getElementById('email');
     const emailPattern = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
     let emailIsValid = emailPattern.test(emailToCheck.value);
@@ -13,6 +14,7 @@ function checkEmail() {
     return true;
 }
 
+//Função para retornar o array de produtos.
 async function getProducts() {
     page++;
     let requestURL = 'https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=' + page;
@@ -30,6 +32,7 @@ async function getProducts() {
     }
 }
 
+//Função de criação de card de produtos e receber as informações dos produtos.
 function newCarditems(products) {
     let items = document.getElementById('items')
     products.forEach(element => {
